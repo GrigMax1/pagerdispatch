@@ -1,0 +1,17 @@
+{
+  "guild_id": 0,
+  "dispatch_channel_id": 0,
+  "dispatch_console_channel_id": 0,
+  "log_channel_id": 0,
+  "police_role_id": 0,
+  "swat_role_id": 0,
+  "detective_role_id": 0,
+  "traffic_role_id": 0,
+  "supervisor_role_ids": [
+    0
+  ],
+  "department_logo_url": "https://via.placeholder.com/100x100?text=SAPD",
+  "embed_color": 15158332,
+  "footer_text": "SAPD Dispatch System",
+  "timezone": "America/Los_Angeles"
+}
