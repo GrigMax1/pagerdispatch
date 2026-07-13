@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  sapd-dispatch-bot:
+    build: .
+    container_name: sapd-dispatch-bot
+    environment:
+      - DISCORD_TOKEN=${DISCORD_TOKEN}
+      - TZ=America/Los_Angeles
+    volumes:
+      - ./data:/app/data
+      - ./config.json:/app/config.json
+      - ./logs:/app/logs
+    restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    networks:
+      - sapd-network
+
+networks:
+  sapd-network:
+    driver: bridge

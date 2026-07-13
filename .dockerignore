@@ -1,0 +1,18 @@
+# Ignore all files by default
+*
+
+# Except these
+!.gitkeep
+!Dockerfile
+!docker-compose.yml
+!.env.example
+!config.json
+!requirements.txt
+!README.md
+!bot.py
+!config.py
+!*.md
+!cogs/
+!views/
+!database/
+!utils/
